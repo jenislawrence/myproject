@@ -2,8 +2,8 @@ header
 {
 	font-size:60px;
 	text-align:center;
-	padding:30px;
-	height:100px;
+	padding:40px;
+	height:auto;
 	margin:0px;
 	background-image: url("bgimg.jpg");
     font-family:verdana;
@@ -28,7 +28,7 @@ div.father
 }
 
 div.son{
-	width:25%;
+	width:100%;
 	border:3px solid gray;
 	height:auto;
 	float:left;
@@ -65,6 +65,7 @@ h3
 	text-align:center;
 	border-top:2px solid gray;
 	padding-top:20px;
+	
 }
 div.eg
 {padding:40px;}
@@ -72,7 +73,7 @@ div.eg
 html
 {background-color:#ffe5cc;}
 
-@media screen and (max-width: 600px) 
-{ .son
-{width:100%;}
+@media screen and (min-width:1224px) 
+{ div.son
+{width:25%;}
 }
