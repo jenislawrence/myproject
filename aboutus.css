@@ -4,12 +4,13 @@ header
 	text-align:center;
 	padding:40px;
 	height:auto;
-	margin:0px;
-	background-image: url("bgimg.jpg");
+	margin:-10px;
+	background-image: url("bgimg.jpg") ;
     font-family:verdana;
 	color:white;
 	font-weight:bold;
 	text-shadow:2px 4px 4px #1a1a1a;
+	
 	
 }
 
@@ -39,6 +40,7 @@ div.son{
 	padding:20px;
 	background-color:#fff2ec;
 	border-radius:15px;
+	transform:translate(-35px,0px);
 	}
 img
 {   display:block;
@@ -73,7 +75,11 @@ div.eg
 html
 {background-color:#ffe5cc;}
 
-@media screen and (min-width:1224px) 
+@media screen and (min-width:992px) 
 { div.son
-{width:25%;}
+{width:25%;
+ transform:translate(30px,0px);
 }
+ 
+}
+
