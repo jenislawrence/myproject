@@ -1,0 +1,83 @@
+body
+{
+	margin:0;
+	padding:0;
+	font-family:sans-serif;
+	background:url(a1.jpg);
+	background-size:cover;
+}
+
+.box
+{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	width:400px;
+	padding:40px;
+	background: rgba(0,0,0,.8);
+	box-sizing:border-box;
+	box-shadow:0 15px 25px rgba(0,0,0,.5);
+	border-radius:10px;
+}
+
+.box h2
+{
+	margin:0 0 30;
+	padding:0;
+	color:#fff;
+	text-align:center;
+}
+.box .inputbox
+{
+	position:relative;
+}
+
+.box .inputbox input
+{
+	width:100%;
+	padding:10px 0;
+	font-size:16px;
+	color:#fff;
+	letter-spacing:1px;
+	margin-bottom:30px;
+	border:none;
+	outline:none;
+	border-bottom: 1px solid #fff;
+	background:transparent;
+}
+
+.box .inputbox label
+{
+	position:absolute;
+	top:0;
+	left:0;
+	padding:10px 0;
+	font-size:16px;
+	color:#fff;
+	letter-spacing:1px;
+	pointer-events:none;/*when label and input are in same place, this event makes it possible to click on label to activate input*/
+	transition: .5s;
+}
+
+.box .inputbox input:focus ~ label,/*when input is focussed, make changes to label*/
+.box .inputbox input:valid ~ label /*without this, the label comes to its original position when it is not focussed(required field is filled)*/
+{
+	top:-18px;
+	left:0;
+	color: #03a9f4;
+	font-size:12px;
+}
+
+.box input[type="submit"]
+{
+	background:transparent;
+	border:none;
+	outline:none;
+	color:#fff;
+	background:#03a9f4;
+	padding:10px 20px;
+	border-radius:5px;
+	cursor:pointer;  /*when hovered, arrow cursor -> hand cursor*/
+}
+
