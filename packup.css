@@ -149,49 +149,24 @@
 /*svg part background*/
 .parent
 {
-	position:absolute;
+	position:relative;
 	margin:0;
 	padding:0;
 	width:100%;
 	height:350px;
-	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(exploreus.jpg);
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(exploreus1.jpg);
 	background-size:cover;
 	
 }
 
-.child 
+.child a
 {
+	
 	top:50%;
 	left :50%;
 	transform:translate(-50%,-50%);
 	position:absolute;
-	
-  
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-.Explore a
-{
-	
-	position:absolute;
-	margin-right:50%;
-	
-	
-	width:200px;
+	width:220px;
 	height:60px;
 	line-height:60px;
     text-align:center;
@@ -199,14 +174,30 @@
 	text-transform:uppercase;
 	font-size:24px;
 	letter-spacing:4px;
-	color:#000;
-	text-decoration:none;
+	color:#fff;
+	text-decoration:None;
+	font-weight:bold;
 }
 
-/*
-.Explore a svg,
-.Explore a svg rect
+.child a:hover
 {
+	text-decoration:None;
+	color:#fff;
+}
+
+.child a:visited
+{
+	text-decoration:None;
+	color:#fff;
+}
+
+
+
+
+.child a svg, 
+.child a svg rect
+{
+	position:absolute;
 	top:0;
 	left:0;
 	width:100%;
@@ -214,11 +205,73 @@
 	fill:transparent;
 }
 
-.Explore a svg rect
+.child a svg rect
 {
 	stroke: #00e2ff;
-	stroke-width:4;
+	stroke-width:6;
 	transition: 2s;
 	stroke-dasharray:60 200;
+	stroke-dashoffset:320;
 }
 
+.child a:hover svg rect
+{
+	stroke: #ff0;
+	stroke-dasharray:200 60;
+	stroke-dashoffset:0;
+}
+
+/* How it works */
+.works h1
+{
+	text-align:center;
+	font-size:35px;
+	font-weight:bold;
+	font-family:Elianto;
+	letter-spacing:1px;
+	margin-bottom:24px;
+}
+
+.works
+{
+	width:100%;
+	height:auto;
+	margin:0px;
+	padding:50px;
+	
+}
+
+
+.col-sm-4 h2
+{
+	/*text-align:center;*/
+	font-size:20px;
+	font-weight:bold;
+	font-family: Elianto;
+	letter-spacing:1px;
+	color:#ff3c1a;
+	
+} 
+
+.works h3
+{
+	font-weight:bold;
+	font-size:18px;
+	font-family:verdana;
+}
+
+.works p
+{
+	font-size:16px;
+	font-family:cursive;
+}
+.col-sm-4
+{
+	margin:0px;
+	padding:15px;
+}
+
+.glyphicon
+{
+	padding:10px;
+}
