@@ -354,7 +354,7 @@
 .col-sm-5
 {
 	margin-bottom:100px;
-	margin-left:20px;
+	margin-left:15px;
 	margin-right:25px;
 	
 }
@@ -456,6 +456,10 @@
 	background: #007bb5;
 }
 
+.icons
+{
+	margin-left:-50px;
+}
 
 .col-sm-3
 {
