@@ -1,6 +1,7 @@
 *
 {
 	box-sizing:border-box;
+	scroll-behavior: smooth;
 }
 
 @font-face
@@ -12,7 +13,7 @@
 .nav a
 {
 	font-size:20px;
-	margin-top:10px;
+	margin-top:10px; 
 	color:black !important;
 }
  
@@ -52,7 +53,10 @@
 	max-height:200px;
 }
 
-
+.hori
+{
+	margin-top:50px;
+}
 	
 }
 
@@ -81,7 +85,7 @@
 	position:relative;
  }
 
-#hyperlink
+.hyperlink
 {
 	top:85%;
 	left:50%;
@@ -92,7 +96,7 @@
 }
  
 
-.fa
+.hyperlink .fa
 {
 	color:#404040;
 	animation:animate 1.5s linear infinite;
@@ -122,7 +126,6 @@
 	width:100%;
 	height:auto;
 	margin:0px;
-	
 	padding:50px;
 	
 }
@@ -143,6 +146,7 @@
 	padding-top:30px;
 	font-size:18px;
 	font-family:cursive;
+	padding:50px;
 }
 
 
@@ -274,4 +278,273 @@
 .works .glyphicon
 {
 	padding:10px;
+}
+
+/*footer*/
+.footer
+{
+	background-color:#252525;
+	margin:0;
+	padding:0;
+}
+
+.footer h1
+{
+	text-align:center;
+	color:#ffffff;
+	text-transform:uppercase;
+	font-size:16px;
+	font-family:verdana;
+	font-weight:bold;
+	padding-top:30px;
+}
+
+.footer input[type=text]
+{
+	width:30%;
+	padding:11px 20px 13px 20px;
+	border-top-left-radius:25px;
+	border-bottom-left-radius:25px;
+	border:none;
+	outline:none;
+	font-family:cursive;
+	font-size:14px;
+
+}
+
+.footer input[type=submit]
+{
+	background:transparent;
+	border:none;
+	outline:none;
+	color:#fff;
+	background:#ff3333;
+	padding:12px 20px;
+	border-radius:0px;
+	margin-left:0px;
+	border-top-right-radius:25px;
+	border-bottom-right-radius:25px;
+	font-weight:bold;
+	letter-spacing:1px;
+	font-size:14px;
+}
+
+.footer input[type=submit]:hover
+{
+	background-color:#ff1a1a;
+}
+
+.subscribe
+{
+	text-align:center;
+	padding-bottom:2em;
+}
+
+
+.mainf
+{
+	margin:0px;
+	padding:0px 30px;
+	background-color:#1a1a1a;
+	position:absolute;
+	width:100%;
+	clear:both;
+}
+
+.col-sm-5
+{
+	margin-bottom:100px;
+	margin-left:20px;
+	margin-right:25px;
+	
+}
+.col-sm-5 h1
+{
+	text-align:center-left;
+	font-size:25px;
+	font-family:sans-serif;
+	letter-spacing:1px;
+	margin-bottom:24px;
+	color:#fff;
+}
+
+.col-sm-5 p
+{
+	color:#cccccc;
+	font-size:16px;
+	text-align:justify;
+	padding-bottom:20px;  
+}
+
+
+
+/*icons animation*/
+.col-sm-5 ul
+{
+	display:flex;
+	position:absolute;
+   
+}
+
+.col-sm-5 ul li{
+	list-style:none;
+}
+
+.col-sm-5 ul li a
+{
+	width:40px;
+	height:40px;
+	background-color:#fff;
+	text-align:center;
+	line-height:35px;
+	font-size:22px;
+	margin:0px 10px;
+	display:block;
+	border-radius:50%;
+	position:relative;
+	overflow:hidden;
+	border:2px solid #fff;
+	z-index:1;
+}
+
+.col-sm-5 ul li a .fa
+{
+	position:relative;
+	color:#1a1a1a;
+	transition:.5s;
+	z-index:3;
+}
+
+.col-sm-5 ul li a:hover .fa
+{
+	color: #fff;
+	transform:rotateY(360deg);
+}
+
+.col-sm-5 ul li a:before
+{
+	content:'';   /*The content property is used with the ::before and ::after pseudo-elements, to insert generated content.*/
+	position:absolute;
+	top:100%;   /*top with respect to element a*/
+	left:0;
+	width:100%;
+	height:100%;
+	background:#f00;
+	transition:.5s;
+	z-index:2;
+}
+
+.col-sm-5 ul li a:hover:before
+{
+	top:0; 
+}
+
+.col-sm-5 ul li:nth-child(1) a:before
+{
+	background:#3b5998;
+}
+.col-sm-5 ul li:nth-child(2) a:before
+{
+	background:#1da1f2;
+}
+.col-sm-5 ul li:nth-child(3) a:before
+{
+	background:#db4437;
+}
+.col-sm-5 ul li:nth-child(4) a:before
+{
+	background: #007bb5;
+}
+
+
+.col-sm-3
+{
+	position:absolute;
+	margin-right:10px;
+
+}
+
+.col-sm-3 h1
+{
+	text-align:center-right;
+	font-size:25px;
+	font-family:sans-serif;
+	letter-spacing:1px;
+	margin-bottom:24px;
+	color:#fff;	
+	margin-left:10px;
+}
+
+.col-sm-3 ul
+{
+	position:absolute;
+}
+
+.col-sm-3 ul li 
+{
+	list-style:none;
+
+	
+	
+}
+
+.col-sm-3 ul li a
+{
+	color:#cccccc;
+	font-size:16px;
+	letter-spacing:1px;
+	
+}
+
+.col-sm-3 .glyphicon
+{
+	
+	
+	color:#000;
+	float:left;
+	font-size:16px;
+	border:1px solid #fff;
+	padding:10px;
+	border-radius:50%;
+	position:relative;
+	background-color:#fff;
+	margin:5px;
+	}
+	
+
+
+.col-sm-3 p
+{
+	color:#cccccc;
+	font-size:16px;
+	padding-left:30px;
+	position:relative;
+	transform:translateY(14px);
+}
+
+.mid-footer
+{
+	margin-bottom:160px;
+}
+.move{
+	margin-left:-30px;
+}
+
+.hori
+{
+	clear:both;
+	
+}
+
+.hori hr
+{
+	width:90%;
+	text-align:center;
+	border-color:#333333;
+}
+
+.hori p
+{
+	margin-top:-15px;
+	text-align:center;
 }
